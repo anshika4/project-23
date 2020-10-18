@@ -49,9 +49,9 @@ function setup() {
 	 
 	box1 =Bodies.rectangle(400, 637, 200,10,{isStatic:true});
 	World.add(world, box1);
-	box2 =createSprite(300,560,10,200);
+	box2 =createSprite(300,560,100,200);
 	box2.shapeColor=("red");
-	box3 = createSprite(500,560,10,200);
+	box3 = createSprite(500,560,100,200);
 	box3.shapeColor=("red");
 
 
@@ -71,7 +71,7 @@ function draw() {
 
 function keyPressed() {
  if (keyCode === DOWN_ARROW) {
-	Matter.Body.setStatic(packageBody,false,{x:width/2,y:height-35});
+	Matter.Body.setStatic(packageBody,false);
     // Look at the hints in the document and understand how to make the package body fall only on
     
   }
